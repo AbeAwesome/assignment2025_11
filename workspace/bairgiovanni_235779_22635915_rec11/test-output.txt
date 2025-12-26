@@ -1,0 +1,53 @@
+Number of non-junk characters was 19
+Maximum comparisons should be 12; you used 9 comparisons
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+[36m│  ├─[0m [36mRecursionChallengeTest[0m [32m✔[0m
+[36m│  │  ├─[0m [34mtestNoX()[0m [32m✔[0m
+[36m│  │  ├─[0m [34mtestAllStar()[0m [32m✔[0m
+[36m│  │  ├─[0m [34mtestMult()[0m [32m✔[0m
+[36m│  │  ├─[0m [34mtestSumN()[0m [32m✔[0m
+[36m│  │  ├─[0m [34mtestIsSorted()[0m [32m✔[0m
+[36m│  │  └─[0m [31mtestSumList()[0m [31m✘[0m [31mCannot invoke "rec11.Node.getNext()" because "<parameter1>" is null[0m
+[36m│  └─[0m [36mDivideAndConquerTest[0m [32m✔[0m
+[36m│     ├─[0m [34mtestCountSorted10()[0m [32m✔[0m
+[36m│     ├─[0m [34mtestCountSorted1024()[0m [32m✔[0m
+[36m│     ├─[0m [34mtestDirtyArray()[0m [32m✔[0m
+[36m│     ├─[0m [34mtestCountSorted512Repeats()[0m [32m✔[0m
+[36m│     └─[0m [34mtestCountSorted1024Repeats()[0m [32m✔[0m
+[36m├─[0m [36mJUnit Vintage[0m [32m✔[0m
+[36m└─[0m [36mJUnit Platform Suite[0m [32m✔[0m
+
+Failures (1):
+  JUnit Jupiter:RecursionChallengeTest:testSumList()
+    MethodSource [className = 'rec11.RecursionChallengeTest', methodName = 'testSumList', methodParameterTypes = '']
+    => java.lang.NullPointerException: Cannot invoke "rec11.Node.getNext()" because "<parameter1>" is null
+       rec11.RecursionChallenge.sumList(RecursionChallenge.java:15)
+       rec11.RecursionChallengeTest.testSumList(RecursionChallengeTest.java:26)
+       java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+       java.base/java.lang.reflect.Method.invoke(Method.java:580)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+       org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+       org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+       org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+       org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+       [...]
+
+Test run finished after 148 ms
+[         5 containers found      ]
+[         0 containers skipped    ]
+[         5 containers started    ]
+[         0 containers aborted    ]
+[         5 containers successful ]
+[         0 containers failed     ]
+[        11 tests found           ]
+[         0 tests skipped         ]
+[        11 tests started         ]
+[         0 tests aborted         ]
+[        10 tests successful      ]
+[         1 tests failed          ]
+
