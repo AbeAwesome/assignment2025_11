@@ -1,0 +1,89 @@
+
+Thanks for using JUnit! Support its development at https://junit.org/sponsoring
+
+[36m╷[0m
+[36m├─[0m [36mJUnit Jupiter[0m [32m✔[0m
+[36m│  └─[0m [36mDivideAndConquerTest[0m [32m✔[0m
+[36m│     ├─[0m [31mtestCountSorted10()[0m [31m✘[0m [31mrec11/Utils[0m
+[36m│     ├─[0m [31mtestCountSorted1024()[0m [31m✘[0m [31mrec11/Utils[0m
+[36m│     ├─[0m [31mtestDirtyArray()[0m [31m✘[0m [31mrec11/Utils[0m
+[36m│     ├─[0m [31mtestCountSorted512Repeats()[0m [31m✘[0m [31mrec11/Utils[0m
+[36m│     └─[0m [31mtestCountSorted1024Repeats()[0m [31m✘[0m [31mrec11/Utils[0m
+[36m├─[0m [36mJUnit Vintage[0m [32m✔[0m
+[36m└─[0m [36mJUnit Platform Suite[0m [32m✔[0m
+
+Failures (5):
+  JUnit Jupiter:DivideAndConquerTest:testCountSorted10()
+    MethodSource [className = 'rec11.DivideAndConquerTest', methodName = 'testCountSorted10', methodParameterTypes = '']
+    => java.lang.NoClassDefFoundError: rec11/Utils
+       rec11.DivideAndConquerTest.testCountSorted10(DivideAndConquerTest.java:23)
+       java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+       java.base/java.lang.reflect.Method.invoke(Method.java:580)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+       [...]
+     Caused by: java.lang.ClassNotFoundException: rec11.Utils
+       java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+       java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+       java.base/java.net.FactoryURLClassLoader.loadClass(URLClassLoader.java:872)
+       java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+       [...]
+  JUnit Jupiter:DivideAndConquerTest:testCountSorted1024()
+    MethodSource [className = 'rec11.DivideAndConquerTest', methodName = 'testCountSorted1024', methodParameterTypes = '']
+    => java.lang.NoClassDefFoundError: rec11/Utils
+       rec11.DivideAndConquerTest.testCountSorted1024(DivideAndConquerTest.java:49)
+       java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+       java.base/java.lang.reflect.Method.invoke(Method.java:580)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+       [...]
+     Caused by: java.lang.ClassNotFoundException: rec11.Utils
+       [...]
+  JUnit Jupiter:DivideAndConquerTest:testDirtyArray()
+    MethodSource [className = 'rec11.DivideAndConquerTest', methodName = 'testDirtyArray', methodParameterTypes = '']
+    => java.lang.NoClassDefFoundError: rec11/Utils
+       rec11.DivideAndConquerTest.testDirtyArray(DivideAndConquerTest.java:100)
+       java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+       java.base/java.lang.reflect.Method.invoke(Method.java:580)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+       [...]
+     Caused by: java.lang.ClassNotFoundException: rec11.Utils
+       [...]
+  JUnit Jupiter:DivideAndConquerTest:testCountSorted512Repeats()
+    MethodSource [className = 'rec11.DivideAndConquerTest', methodName = 'testCountSorted512Repeats', methodParameterTypes = '']
+    => java.lang.NoClassDefFoundError: rec11/Utils
+       rec11.DivideAndConquerTest.testCountSorted512Repeats(DivideAndConquerTest.java:67)
+       java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+       java.base/java.lang.reflect.Method.invoke(Method.java:580)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+       [...]
+     Caused by: java.lang.ClassNotFoundException: rec11.Utils
+       [...]
+  JUnit Jupiter:DivideAndConquerTest:testCountSorted1024Repeats()
+    MethodSource [className = 'rec11.DivideAndConquerTest', methodName = 'testCountSorted1024Repeats', methodParameterTypes = '']
+    => java.lang.NoClassDefFoundError: rec11/Utils
+       rec11.DivideAndConquerTest.testCountSorted1024Repeats(DivideAndConquerTest.java:84)
+       java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+       java.base/java.lang.reflect.Method.invoke(Method.java:580)
+       org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
+       org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+       [...]
+     Caused by: java.lang.ClassNotFoundException: rec11.Utils
+       [...]
+
+Test run finished after 116 ms
+[         4 containers found      ]
+[         0 containers skipped    ]
+[         4 containers started    ]
+[         0 containers aborted    ]
+[         4 containers successful ]
+[         0 containers failed     ]
+[         5 tests found           ]
+[         0 tests skipped         ]
+[         5 tests started         ]
+[         0 tests aborted         ]
+[         0 tests successful      ]
+[         5 tests failed          ]
+
